@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+	<title>page-2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.outer-box {
+	background-color: #ffa700;
+	border: 1px;
+	padding: 25px;
+}
+
+.middle-box {
+	background-color: #c46210;
+	border-radius: 25px;
+	padding: 10px;
+
+}
+.container {
+	max-width: 100%;
+	border-radius: 25px;
+	background-color: #ed9121;
+	padding: 1px 1px 1px 30px;
+	display: flex;
+	align-items: center;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav a {
+	display: inline-block;
+	padding: 25px 25px;
+	color: white;
+	text-decoration: none;
+}
+.nav ul li:hover {
+	background-color: grey;
+	border-radius: 20px;
+}
+
+.dropdown{
+	display: none;
+}
+
+.nav ul li:hover .dropdown {
+	display: block;
+	position: absolute;
+	background-color: #c46210;
+	margin-top: 52px;
+	margin-left: 100px;
+}
+.nav ul li:hover .dropdown ul li {
+	display: block;	
+	width: 120px;
+	border-bottom: 1px;
+	background: transparent;
+}
+
+hr.line {
+	border-bottom: 1px;
+}
+
+#maincontent{
+	padding: 50px 50px ;
+}
+#img2{
+	padding-top: 20px;
+	width: 100%;
+	height: 400px;
+}
+button{
+		background-color: seagreen;
+		color: white;
+		border-radius: 5px;
+		padding: 10px 35px;
+		font-size: 20px;
+}
+hr.line1 {
+		border-bottom: 1px;
+		width:90%;
+		margin-center:0;
+}
+section{
+	display: flex;
+}
+#leftbar, #maincontent{
+	flex: 40% 60%;
+}
+
+</style>
+</head>
+<body>
+	<header>
+		<div class="outer-box">
+			<div class="middle-box">	
+				<div class="container">
+					<img src="./images/AIT-white.jpg" alt="achieversit">
+					<nav class="nav">
+						<ul>
+						    <li>
+								<a href="#">HOME</a>
+							</li>
+							<li>
+								<a href="#">DROPDOWN</a>
+								<div class="dropdown">
+								 <ul>
+									<li><a href="#">menu1</a></li>
+									<li><a href="#">menu2</a></li>
+									<li><a href="#">menu3</a></li>
+								 </ul>
+								</div> 
+							</li>
+							<li>
+								<a href="#">LEFT SIDEBAR</a>
+							</li>
+							<li>
+								<a href="#">RIGHT SIDEBAR</a>
+							</li>
+							<li>
+								<a href="#">NO SIDEBAR</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+	<div id="leftbar">
+		<h3>Zero Hunger-Target Goal 1</h3>
+		<hr class="hrline">
+		<p>By 2030, end hunger and ensure access by all people, in particular the poor and people in vulnerable situations, including infants, to safe, nutritious and sufficient food all year round.</p>
+		<button type="submit"><i class="fa fa-angle-double-right"></i>Read more</button>
+		<h3>Zero Hunger-Target Goal 2</h3>
+		<hr class="hrline">
+		<p>Adopt measures to ensure the proper functioning of food commodity markets and their derivatives and facilitate timely access to market information, including on food reserves, in order to help limit extreme food price volatility.</p>
+		<button type="submit"><i class="fa fa-angle-double-right"></i>Read more</button>
+	</div>	
+	<div id="maincontent">
+		<h1>LEFT SIDEBARS</h1>
+		<p>sidebars are welcome here</p>
+		<hr class="line">
+		<hr class="line">
+		<img id="img2" src="./images/img2.jpg" alt="zerohunger" />
+		<p> A profound change of the global food and agriculture system is needed if we are to nourish the more than 690 million people who are hungry today – and the additional 2 billion people the world will have by 2050. Increasing agricultural productivity and sustainable food production are crucial to help alleviate the perils of hunger.
+		</p>
+		<h1>Hunger</h1>
+		<p>Current estimates are that nearly 690 million people are hungry, or 8.9 percent of the world  population – up by 10 million people in one year and by nearly 60 million in five years.
+		The majority of the world’s undernourished – 381 million – are still found in Asia. More than 250 million live in Africa, where the number of undernourished is growing faster than anywhere in the world.
+		In 2019, close to 750 million – or nearly one in ten people in the world – were exposed to severe levels of food insecurity.
+		An estimated 2 billion people in the world did not have regular access to safe, nutritious and sufficient food in 2019.
+		If recent trends continue, the number of people affected by hunger will surpass 840 million by 2030, or 9.8 percent of the global population.
+		144 million children under age 5 were affected by stunting in 2019, with three quarters living in Southern Asia and sub-Saharan Africa.
+		In 2019, 6.9 per cent (or 47 million) children under 5 were affected by wasting, or acute undernutrition, a condition caused by limited nutrient intake and infection.
+		</p>
+		<p>At the same time,after decades of steady decline, the number of people who suffer from hunger – as measured by the prevalence of undernourishment – began to slowly increase again in 2015. Current estimates show that nearly 690 million people are hungry, or 8.9 percent of the world population – up by 10 million people in one year and by nearly 60 million in five years.The world is not on track to achieve Zero Hunger by 2030. If recent trends continue, the number of people affected by hunger would surpass 840 million by 2030.</p>
+	</div>
+	</section>
+</body>
+</html>

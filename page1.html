@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+	<title>page-1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	.outer-box {
+		background-color: #ffa700;
+		border: 1px;
+		padding: 25px;
+		text-align: center;
+		color: whitesmoke;
+
+	}
+
+	.middle-box {
+		background-color: #c46210;
+		border-radius: 25px;
+		padding: 10px;
+
+	}
+	.container {
+		max-width: 100%;
+		border-radius: 25px;
+		background-color: #ed9121;
+		padding: 1px 1px 1px 30px;
+		display: flex;
+		align-items: center;
+	}
+
+	.nav li {
+		display: inline;
+	}
+
+	.nav a {
+		display: inline-block;
+		padding: 25px 25px;
+		color: white;
+		text-decoration: none;
+	}
+	.nav ul li:hover {
+		background-color: grey;
+		border-radius: 20px;
+	}
+
+	.dropdown{
+		display: none;
+	}
+
+	.nav ul li:hover .dropdown {
+		display: block;
+		position: absolute;
+		background-color: #c46210;
+		margin-top: 52px;
+		margin-left: 100px;
+	}
+	.nav ul li:hover .dropdown ul li {
+		display: block;	
+		width: 120px;
+		border-bottom: 1px;
+		background: transparent;
+	}
+	hr.line {
+		border-bottom: 1px;
+		width:50%;
+		margin-center:0;
+	}
+	hr.line1 {
+		border-bottom: 0.5px;
+		width:90%;
+		margin-center:0;
+	}
+	button{
+		background-color: seagreen;
+		color: white;
+		border-radius: 5px;
+		padding: 10px 35px;
+		font-size: 20px;
+	}
+	.container2{
+		background-color: lightgray;
+	}
+	.heading-content{
+		text-align: center;
+	}
+	h1{
+		padding-top: 30px;
+	}
+	.imagecontainer{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1em;
+		padding-left: 80px;
+		padding-top: 30px;
+		text-align: center;
+	}
+	#containerimg{
+		border-radius: 8px;
+		width: 200px;
+		height: 150px;	
+	}
+	.container3{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 2em;
+		background-color: whitesmoke;
+		text-align: center;
+	}
+	
+</style>
+</head>
+<body>
+	<section>
+		<div class="outer-box">
+			<div class="middle-box">	
+				<div class="container">
+					<img src="./images/AIT-white.jpg" alt="achieversit">
+					<nav class="nav">
+						<ul>
+							<li>
+								<a href="#">HOME</a>
+							</li>
+							<li>
+								<a href="#">DROPDOWN</a>
+								<div class="dropdown">
+									<ul>
+										<li><a href="#">menu1</a></li>
+										<li><a href="#">menu2</a></li>
+										<li><a href="#">menu3</a></li>
+									</ul>
+								</div> 
+							</li>
+							<li>
+								<a href="#">LEFT SIDEBAR</a>
+							</li>
+							<li>
+								<a href="#">RIGHT SIDEBAR</a>
+							</li>
+							<li>
+								<a href="#">NO SIDEBAR</a>
+							</li>
+						</ul>
+					</nav>
+		        </div>
+			</div>
+			<hr class="line">
+			<hr class="line">
+			<h2>AchieversIT:FREE Responsive Template <br />built on HTML5 and CSS3 </h2>
+			<hr class="line">
+			<hr class="line">
+			<h3>Does the statement makes you click on the button? <br />
+			<button type="submit"><i class="fa fa-check"></i>YES it does</button></h3>
+	</div>
+
+			<div class="container2">
+				<h1 class="heading-content">THIS IS AN IMPORTANT HEADING</h1>
+				<h4 class="heading-content">This is where we look pretty</h4>
+				<hr class="line1">
+				<hr class="line1">
+				<div class="imagecontainer">
+					<div>	
+						<img id="containerimg"src="./images/html.png" alt="html" />
+						<h2>HTML</h2>
+						<h5>To put content of webpage</h5>
+					</div>
+					<div>
+						<img id="containerimg" src="./images/css.jpg" alt="css" />
+						<h2>CSS</h2>
+						<h5>To design the webpage</h5>
+					</div>
+					<div>
+						<img id="containerimg" src="./images/js.png" alt="js" />
+						<h2>Javascript</h2>
+						<h5>To make webpage more interactive and dynamic</h5>
+					</div>
+				</div>
+				<p align="center">Web development is the work involved in developing a Web site for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</p><br />
+			</div>
+			<div class="container3">
+				<div>
+					<h2>Frontend Development</h2>
+					<h5>Course Content</h5>
+					<hr class=line1>
+					<hr class=line1>
+					<p>Front-end web development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.</p>
+					<button type="submit"><i class="fa fa-chevron-right"></i> let's do this</button>
+				</div>
+				<div>
+					<h2>Backend Development</h2>
+					<p>where to use?</p>
+					<hr class=line1>
+					<hr class=line1>
+					<p>Back end development refers to the server side of an application and everything that communicates between the database and the browser.</p>
+					<button type="submit"><i class="fa fa-info-circle"></i> wait ,what next?</button>
+				</div>
+			</div>	
+		</section>	
+	</body>
+	</html>

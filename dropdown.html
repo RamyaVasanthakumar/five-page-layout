@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+	<title>page-4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.outer-box {
+	background-color: #ffa700;
+	border: 1px;
+	padding: 25px;
+}
+
+.middle-box {
+	background-color: #c46210;
+	border-radius: 25px;
+	padding: 10px;
+
+}
+.container {
+	max-width: 100%;
+	border-radius: 25px;
+	background-color: #ed9121;
+	padding: 1px 1px 1px 30px;
+	display: flex;
+	align-items: center;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav a {
+	display: inline-block;
+	padding: 25px 25px;
+	color: white;
+	text-decoration: none;
+}
+.nav ul li:hover {
+	background-color: grey;
+	border-radius: 20px;
+}
+
+.dropdown{
+	display: none;
+}
+
+.nav ul li:hover .dropdown {
+	display: block;
+	position: absolute;
+	background-color: #c46210;
+	margin-top: 52px;
+	margin-left: 100px;
+}
+.nav ul li:hover .dropdown ul li {
+	display: block;	
+	width: 120px;
+	border-bottom: 1px;
+	background: transparent;
+}
+</style>
+</head>
+<body>
+	<header>
+		<div class="outer-box">
+			<div class="middle-box">	
+				<div class="container">
+					<img src="./images/AIT-white.jpg" alt="achieversit">
+					<nav class="nav">
+						<ul>
+						    <li>
+								<a href="#">HOME</a>
+							</li>
+							<li>
+								<a href="#">DROPDOWN</a>
+								<div class="dropdown">
+								 <ul>
+									<li><a href="#">menu1</a></li>
+									<li><a href="#">menu2</a></li>
+									<li><a href="#">menu3</a></li>
+								 </ul>
+								</div> 
+							</li>
+							<li>
+								<a href="#">LEFT SIDEBAR</a>
+							</li>
+							<li>
+								<a href="#">RIGHT SIDEBAR</a>
+							</li>
+							<li>
+								<a href="#">NO SIDEBAR</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+</body>
+</html>
